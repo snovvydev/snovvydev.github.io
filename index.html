@@ -7,11 +7,11 @@
   <title>snow</title>
   <style>
     :root {
-      --ink: #eafcff;
-      --muted: #9ab9c2;
-      --ice: #72e7ff;
-      --pink: #ff80bd;
-      --bg: #071319;
+      --ink: #f4eee6;
+      --muted: #c6b8a7;
+      --ice: #d2c2ad;
+      --pink: #b9a58c;
+      --bg: #171513;
     }
 
     * { box-sizing: border-box; }
@@ -24,9 +24,9 @@
       overflow: hidden;
       color: var(--ink);
       background:
-        radial-gradient(circle at 20% 15%, rgba(114, 231, 255, .12), transparent 28rem),
-        radial-gradient(circle at 85% 80%, rgba(255, 128, 189, .10), transparent 24rem),
-        var(--bg);
+        radial-gradient(circle at 15% 12%, rgba(210, 194, 173, .10), transparent 28rem),
+        radial-gradient(circle at 85% 82%, rgba(103, 85, 67, .22), transparent 24rem),
+        linear-gradient(135deg, #181614 0%, var(--bg) 62%, #2b211a 100%);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
@@ -35,10 +35,10 @@
       position: fixed;
       inset: 0;
       pointer-events: none;
-      opacity: .22;
+      opacity: .18;
       background-image:
-        linear-gradient(rgba(114, 231, 255, .08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(114, 231, 255, .08) 1px, transparent 1px);
+        linear-gradient(rgba(210, 194, 173, .07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(210, 194, 173, .07) 1px, transparent 1px);
       background-size: 48px 48px;
       mask-image: linear-gradient(to bottom, black, transparent 90%);
     }
@@ -47,10 +47,11 @@
       position: relative;
       width: min(680px, calc(100% - 40px));
       padding: 52px;
-      border: 1px solid rgba(114, 231, 255, .18);
+      border: 1px solid rgba(210, 194, 173, .16);
       border-radius: 28px;
-      background: rgba(9, 25, 32, .78);
-      box-shadow: 0 24px 80px rgba(0, 0, 0, .35);
+      background:
+        linear-gradient(145deg, rgba(91, 78, 64, .88), rgba(55, 46, 38, .92));
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .48);
       backdrop-filter: blur(12px);
     }
 
@@ -92,7 +93,7 @@
       align-items: center;
       gap: 10px;
       padding: 14px 18px;
-      color: #071319;
+      color: #241f1a;
       background: var(--pink);
       border-radius: 999px;
       font-weight: 800;
@@ -102,7 +103,7 @@
 
     a:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 28px rgba(255, 128, 189, .24);
+      box-shadow: 0 10px 28px rgba(185, 165, 140, .22);
     }
 
     a::after { content: "↗"; font-size: 18px; }
